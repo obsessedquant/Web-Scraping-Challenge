@@ -25,7 +25,6 @@ def home():
 def scrape():
 
     # Run the scrape function
-    # costa_data = scrape_costa.scrape_info()
     final_dictionary = scrape_mars.scrape()
 
     # Update the Mongo database using update and upsert=True

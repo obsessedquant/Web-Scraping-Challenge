@@ -100,10 +100,6 @@ def scrape():
 
     # Extract table header and column values
     table_headers = df.columns.tolist()
-    # col1_list = df['Mars - Earth Comparison'].tolist()
-    # col2_list = df['Mars'].tolist()
-    # col3_list = df['Earth'].tolist()
-    # table_dict = df.set_index('Mars - Earth Comparison').T.to_dict('list')
     table_rows = df.values.tolist()
 
     # url for the image (Chrome version)
@@ -181,10 +177,6 @@ def scrape():
         "featured_image":featured_image_url,
         "mars_facts":html_table,
         "table_headers":table_headers,
-        # "col1_list":col1_list,
-        # "col2_list":col2_list,
-        # "col3_list":col3_list,
-        # "table_dict":table_dict,
         "table_rows":table_rows,
         "mars_hemispheres":hemisphere_image_urls
     }
